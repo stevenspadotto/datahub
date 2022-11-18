@@ -1,0 +1,19 @@
+name: datahub-podman
+
+up:
+  - homebrew:
+      - python3
+      - jq
+  - podman
+commands:
+  install-cli:
+    run: scripts/install-cli.sh
+    desc: "install datahub cli"
+  quickstart:
+    run: scripts/quickstart.sh
+    desc: "start datahub"
+  nuke:
+    run: scripts/nuke.sh
+    desc: "kill datahub"
+open:
+  app: http://localhost:9002
