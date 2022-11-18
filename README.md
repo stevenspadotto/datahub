@@ -18,7 +18,13 @@ Or, go to [http://localhost:9002](http://localhost:9002).
 
 The username is `datahub` and password is `datahub`.
 
-3. Install the DataHub CLI (optional)
+3. Kill DataHub containers
+
+```
+dev nuke
+```
+
+4. Install the DataHub CLI (optional)
 
 ```
 dev install-cli
